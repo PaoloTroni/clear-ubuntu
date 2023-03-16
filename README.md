@@ -15,3 +15,8 @@ En este repositorio hay dos archivos similares, los dos hacen lo mismo, la únic
 - Habilitar el archivo para que se ejecute: Con "click derecho" > Propiedades > Permisos > Permitir ejecutar el archivo como un programa
 - Abrir una terminal en la carpeta donde está guardado el archivo
 - Escribir en la terminal: sudo ./NOMBRE_DEL_ARCHIVO.sh, introducir su contraseña y LISTO!
+
+Estos comandos los saqué de una búsqueda por internet y en especial, en la siguiente página web: 
+https://itsfoss.com/es/liberar-espacio-ubuntu-linux/#6-limpiar-la-cach%C3%A9-de-miniaturas-conocimiento-intermedio
+
+y realicé los scripts con intención de optimizar la faena de liberar espacio en mi ordenador.
