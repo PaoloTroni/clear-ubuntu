@@ -65,6 +65,7 @@ du -h /var/lib/snapd/snaps
 echo " "
 set -u
 echo ">>>>>>>Iniciando la eliminación de revisiones antiguas de snaps"
+  # ese script funciona en versiones de SO que estén en español. Para versiones en otro idioma hay que ejecutar en la terminal "snap list --all" y mirar en la columna "Notes" (última columna) como están identificados los snaps desactivados y sostituir en la siguiente línea la palabra "desactivado" por la del idioma del SO.
 snap list --all | awk '/desactivado/{print $1, $3}' |
     while read snapname revision; do
         echo "Ejecutando snap remove $snapname --revision=$revision"
