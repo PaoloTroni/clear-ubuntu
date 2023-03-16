@@ -1,15 +1,15 @@
-#Scripts para "limpiar" Ubuntu
+# Scripts para "limpiar" Ubuntu
 
 En este repositorio hay dos archivos similares, los dos hacen lo mismo, la única diferencia es que uno esta escrito de forma "linear" y otro está optimizado con funciones.
 
-##Lo que estos archivos hacen es:
+## Lo que estos archivos hacen es:
 - Ejecuta apt-get autoremove para borrar los paquetes que ya no son necesarios"
 - Ejecuta apt-get clean para limpiar la caché de APT
 - Ejecuta journalctl --vacuum-time=30d para borrar los registros del diario systemd de los últimos 30 días
 - Ejecuta rm -rf home/$SUDO_USER/.cache/thumbnails/* para limpiar la caché de miniaturas
 - Ejecuta un script para eliminar rervisiones antiguas de snaps
 
-##Para ejecutar estos archivos:
+## Para ejecutar estos archivos:
 - Es suficiente ejecutar uno solo (hacen exactamente lo mismo)
 - Guardar en el ordenador
 - Habilitar el archivo para que se ejecute: Con "click derecho" > Propiedades > Permisos > Permitir ejecutar el archivo como un programa
