@@ -5,7 +5,8 @@ En este repositorio hay dos archivos similares, los dos hacen lo mismo, la únic
 ## Lo que estos archivos hacen es:
 - Ejecuta apt-get autoremove para borrar los paquetes que ya no son necesarios"
 - Ejecuta apt-get clean para limpiar la caché de APT
-- Ejecuta journalctl --vacuum-time=30d para borrar los registros del diario systemd de los últimos 30 días
+-NO- Ejecuta journalctl --vacuum-time=30d para borrar los registros del diario systemd de los últimos 30 días - NO -
+- Ejecuta journalctl --vacuum-size=1M para borrar los registros del diario systemd que ocupen más de 1Mb
 - Ejecuta rm -rf home/$SUDO_USER/.cache/thumbnails/* para limpiar la caché de miniaturas
 - Ejecuta un script para eliminar rervisiones antiguas de snaps
 
